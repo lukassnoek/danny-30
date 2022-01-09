@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 
-input = np.random.uniform(size=(1, 128))
+input = np.random.randn(1, 128)
 
 model = load_model('DannyNet')
 img = model.predict(input).squeeze()
